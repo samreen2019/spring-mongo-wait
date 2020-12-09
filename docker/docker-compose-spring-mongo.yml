@@ -10,7 +10,6 @@ services:
       - ./mongodata:/data/db
     networks:
       - network-reactive
-    container_name: mongo
 
   spring-boot-reactive:
     build:
