@@ -10,4 +10,4 @@ WORKDIR /usr/src/reactive-backend
 RUN ls
 RUN chmod +x /usr/src/reactive-backend/wait-for-it.sh
 EXPOSE 8080
-CMD ./wait-for-it.sh mongo:27017 -t 25 && java -jar reactive-web-1.0.0-SNAPSHOT.jar
+CMD ./wait-for-it.sh mongo:27017 -t 180 && java -jar reactive-web-1.0.0-SNAPSHOT.jar
