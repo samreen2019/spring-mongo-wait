@@ -16,6 +16,7 @@ public class WebConfiguration {
 
         config.setAllowCredentials(true);
         config.addAllowedOrigin("http://localhost:4200");
+        config.addAllowedOrigin("https://ove4wwve387jw.educative.run");
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
 
