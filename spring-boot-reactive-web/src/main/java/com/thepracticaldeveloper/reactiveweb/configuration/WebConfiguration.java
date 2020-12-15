@@ -15,8 +15,9 @@ public class WebConfiguration {
         CorsConfiguration config = new CorsConfiguration();
 
         config.setAllowCredentials(true);
-        config.addAllowedOrigin("http://localhost:4200");
-        config.addAllowedOrigin("https://ove4wwve387jw.educative.run");
+        //config.addAllowedOrigin("http://localhost:4200");
+        //config.addAllowedOrigin("https://ove4wwve387jw.educative.run");
+        config.addAllowedOrigin("*");
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
 
