@@ -7,7 +7,7 @@ import {Observable} from 'rxjs';
 @Injectable()
 export class QuoteReactiveService {
 
-  url: string = window.location.protocol + '//' + window.location.hostname + '3000/quotes-reactive';
+  url: string = window.location.protocol + '//' + window.location.hostname + ':3000/quotes-reactive';
   urlPaged: string = window.location.protocol + '//' + window.location.hostname + ':3000/quotes-reactive-paged';
 
   getQuoteStream(page?: number, size?: number): Observable<Quote> {

@@ -9,7 +9,7 @@ import {Observable} from "rxjs";
 export class QuoteBlockingService {
 
   url: string = window.location.protocol + '//' + window.location.hostname + ':3000/quotes-blocking';
-  urlPaged: string = window.location.protocol + '//' + window.location.hostname + '3000/quotes-blocking-paged';
+  urlPaged: string = window.location.protocol + '//' + window.location.hostname + ':3000/quotes-blocking-paged';
 
   constructor(private http: HttpClient) {}
 
