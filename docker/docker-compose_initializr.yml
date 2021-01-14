@@ -2,9 +2,7 @@ version: "2"
 
 services:
   spring-boot-reactive:
-    build:
-      context: ../spring-initializr_skeleton
-    image: spring-initializr-tpd
+    image: educative1/spring_initializr
     ports:
       - "8080:8080"
     networks:
