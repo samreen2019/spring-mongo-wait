@@ -12,9 +12,7 @@ services:
       - network-reactive
 
   spring-boot-reactive:
-    build:
-      context: ../spring-boot-reactive-web
-    image: spring-boot-reactive-web-tpd
+    image: educative1/spring_boot
     environment:
       # Overrides the host in the Spring Boot application to use the Docker's hostname
       - SPRING_DATA_MONGODB_HOST=mongo
