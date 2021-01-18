@@ -22,9 +22,7 @@ services:
       - network-reactive
 
   angular-reactive:
-    build:
-      context: ../angular-reactive
-    image: angular-reactive-tpd
+    image: educative1/angular_reactive
     ports:
       - "4200:1827"
     networks:
